@@ -1,0 +1,40 @@
+article {
+  border: 3px solid #545149;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+article:hover {
+  box-shadow: 5px 5px #b5b5b5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+article p {
+  border-bottom: 3px solid #545149;
+  margin-bottom: 10px;
+  text-indent: 10px;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 10px;
+  font-size: 16px;
+}
+
+footer div i {
+  color: #4056A1;
+  font-size: 16px;
+  margin: 0 3px;
+}
+
+footer i:hover {
+  color: #d11919;
+}
