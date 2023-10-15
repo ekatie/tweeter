@@ -2,6 +2,7 @@ article {
   border: 3px solid #545149;
   padding: 20px;
   margin-top: 50px;
+  background-color: #ffffff
 }
 
 article:hover {
@@ -13,13 +14,29 @@ header {
   justify-content: space-between;
 }
 
+.mini-avatar {
+  width: 60px;
+  margin-right: 15px;
+}
+
+header div {
+  align-items: center
+}
+
+.handle {
+  color: #adacac;
+  font-weight: 600;
+  font-size: 22px;
+  padding-right: 20px;
+}
+
 article p {
   border-bottom: 3px solid #545149;
-  margin-bottom: 10px;
-  text-indent: 10px;
+  margin: 10px 0;
+  padding: 10px 10px 20px 10px;
   display: flex;
   align-items: center;
-  line-height: 2;
+  font-weight: 600;
 }
 
 article footer {
@@ -29,9 +46,8 @@ article footer {
   font-size: 16px;
 }
 
-footer div i {
+footer i {
   color: #4056A1;
-  font-size: 16px;
   margin: 0 3px;
 }
 
