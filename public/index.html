@@ -55,7 +55,7 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <section class="new-tweet">
+    <section>
       <form action="/tweets/" method="POST">
         <label for="tweet-text">What are you hummmmming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -68,10 +68,13 @@
     <section>
       <article class="tweet">
         <header>
-          <div class="avatar-name">User.Avatars + User.Name</div>
-          <div class="handle">User.Handle</div>
+          <div>
+            <img class="mini-avatar" src="/images/profile-hex.png">User.Name
+          </div>
+          <div class="handle">@User.Handle</div>
         </header>
-        <p>tweet tweet tweet - baby shark doo doo doo doo</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus suscipit sapiente ab ad
+          velit dignissimos voluptas quis.</p>
         <footer>
           <div>created_at: timestamp</div>
           <div>
