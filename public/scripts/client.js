@@ -105,6 +105,25 @@ $(document).ready(function () {
   ];
 
   renderTweets(data);
+
+  $(function () {
+    const $newTweet = $('#new-tweet');
+
+    $newTweet.on('submit', function (event) {
+      event.preventDefault();
+      const tweetData = $newTweet.serialize();
+      console.log(tweetData);
+      $.ajax('/tweets', { method: 'POST', data: tweetData })
+        .then(function (response) {
+          console.log('Tweet posted successfully!');
+        })
+        .fail(function (xhr, status, error) {
+          console.log("Error posting tweet: ", status, error);
+        });
+    });
+  });
+
+
 });
 
 /* Test / driver code (temporary). Eventually will get this from the server.
