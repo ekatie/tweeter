@@ -1,6 +1,20 @@
 // When document is ready
 $(document).ready(function () {
-  $('#new-tweet').on('submit', onSubmit);
+  $('#new-tweet').on('submit', function (event) {
+    // No content entered
+    if (!$('#tweet-text').val()) {
+      alert('Please enter at least one character');
+      event.preventDefault();
+    } // Over 140 characters
+    else if ($('#tweet-text').val().length > 140) {
+      alert('Your tweet cannot exceed 140 characters');
+      event.preventDefault();
+    } else {
+      onSubmit(event);
+      $('#new-tweet')[0].reset();
+    }
+  });
+
   loadTweets();
 });
 
@@ -64,7 +78,6 @@ const renderTweets = function (tweetsArray) {
  */
 const loadTweets = function () {
   $.get('/tweets', (res) => {
-    console.log(res);
     renderTweets(res);
   });
 };
