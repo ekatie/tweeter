@@ -3,15 +3,18 @@ $(document).ready(function () {
   $('#new-tweet').on('submit', function (event) {
     // No content entered
     if (!$('#tweet-text').val()) {
-      alert('Please enter at least one character');
       event.preventDefault();
+      const message = '<p>Please enter at least one character</p>';
+      $('.error p').replaceWith(message);
     } // Over 140 characters
     else if ($('#tweet-text').val().length > 140) {
-      alert('Your tweet cannot exceed 140 characters');
       event.preventDefault();
+      const message = '<p>Your tweet cannot exceed 140 characters</p>';
+      $('.error p').replaceWith(message);
     } else {
       onSubmit(event);
       $('#new-tweet')[0].reset();
+      $('.error p').empty();
     }
   });
 
