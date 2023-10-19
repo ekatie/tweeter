@@ -1,5 +1,10 @@
 // When document is ready
 $(document).ready(function () {
+  // Toggle new tweet form
+  $('nav button').on('click', function () {
+    $('#new-tweet').toggle(400);
+  });
+
   $('#new-tweet').on('submit', function (event) {
     // No content entered
     if (!$('#tweet-text').val()) {
