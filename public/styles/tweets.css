@@ -54,4 +54,5 @@ footer i {
 
 footer i:hover {
   color: #d11919;
+  cursor: pointer;
 }
