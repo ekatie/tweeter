@@ -4,18 +4,20 @@ $(document).ready(function () {
     // No content entered
     if (!$('#tweet-text').val()) {
       event.preventDefault();
-      const message = '<p>Please enter at least one character</p>';
-      $('.error p').replaceWith(message);
-    } // Over 140 characters
-    else if ($('#tweet-text').val().length > 140) {
-      event.preventDefault();
-      const message = '<p>Your tweet cannot exceed 140 characters</p>';
-      $('.error p').replaceWith(message);
-    } else {
-      onSubmit(event);
-      $('#new-tweet')[0].reset();
-      $('.error p').empty();
+      const message = 'Please enter at least one character!';
+      $('.error').append(message).slideDown(300);
+      return;
     }
+    // Over 140 characters
+    if ($('#tweet-text').val().length > 140) {
+      event.preventDefault();
+      const message = 'Your tweet cannot exceed 140 characters!';
+      $('.error').append(message).slideDown(300);
+      return;
+    }
+    onSubmit(event);
+    $('#new-tweet')[0].reset();
+    $('.error').slideUp();
   });
 
   loadTweets();
