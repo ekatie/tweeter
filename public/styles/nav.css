@@ -24,6 +24,11 @@ nav .right {
   text-align: center;
 }
 
+nav button {
+  background-color: #4056A1;
+  border: 0;
+}
+
 nav .right h2 {
   font-weight: normal;
   font-size: 1em;
