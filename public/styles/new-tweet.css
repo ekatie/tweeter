@@ -8,6 +8,10 @@
   display: none;
 }
 
+.container form {
+  display: none;
+}
+
 label {
   font-weight: 600;
   color: #545149;
@@ -30,7 +34,7 @@ div {
   justify-content: space-between;
 }
 
-button {
+.container button {
   background-color: #4056A1;
   color: #ffffff;
   font-family: 'Bungee', sans-serif;
@@ -40,7 +44,7 @@ button {
   margin-top: 20px;
 }
 
-button:hover {
+.container button:hover {
   background-color: #d11919;
 }
 
