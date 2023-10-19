@@ -2,12 +2,9 @@
   color: #d11919;
   font-size: 20px;
   font-weight: 600;
-  padding: 0 1em;
+  padding: 1.5em 1em;
   border: 3px solid #d11919;
   margin-bottom: 20px;
-}
-
-.error:has(p:empty) {
   display: none;
 }
 
