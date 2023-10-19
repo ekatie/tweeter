@@ -1,3 +1,16 @@
+.error {
+  color: #d11919;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 1em;
+  border: 3px solid #d11919;
+  margin-bottom: 20px;
+}
+
+.error:has(p:empty) {
+  display: none;
+}
+
 label {
   font-weight: 600;
   color: #545149;
@@ -10,7 +23,6 @@ label {
   background-color: #f2f2f2;
   border: 0;
   border-bottom: 3px solid #545149;
-  margin-bottom: 20px;
   resize: none;
   font-size: 20px;
   font-weight: 600;
@@ -28,6 +40,7 @@ button {
   font-size: 20px;
   padding: 2px 10px;
   border: 0;
+  margin-top: 20px;
 }
 
 button:hover {
