@@ -33,11 +33,25 @@ const onSubmit = function (event) {
 };
 
 /**
+ * This function escapes any XSS entered as tweet content.
+ * @param {String} str - String text input by user.
+ * @returns - Secure / sanitized version of the string.
+ */
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
+/**
 * This function creates a tweet element from an object containing tweet data.
 * @param {object} tweetData - Object containing tweet data, including username, avatar, handle, tweet content and date (UNIX timestamp).
 * @returns - Tweet element
 */
 const createTweetElement = function (tweetData) {
+  const tweetContent = escape(tweetData.content.text);
+
   const $tweet = `
     <article class="tweet">
     <header>
@@ -46,7 +60,7 @@ const createTweetElement = function (tweetData) {
     </div>
       <div class="handle">${tweetData.user.handle}</div>
     </header>
-    <p>${tweetData.content.text}</p>
+    <p>${tweetContent}</p>
     <footer>
       <div>${timeago.format(new Date(tweetData["created_at"]))}</div>
       <div>
