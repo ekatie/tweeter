@@ -61,8 +61,11 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section>
-      <p class="error"><i class="fa-solid fa-circle-exclamation"> </i>
-      </p>
+      <div class="error">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p>
+        </p>
+      </div>
       <form id="new-tweet" action="/tweets/" method="POST">
         <label for="tweet-text">What are you hummmmming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
