@@ -10,14 +10,16 @@ $(document).ready(function () {
     if (!$('#tweet-text').val()) {
       event.preventDefault();
       const message = 'Please enter at least one character!';
-      $('.error').append(message).slideDown(300);
+      $('.error p').text(message);
+      $('.error').slideDown(300);
       return;
     }
     // Over 140 characters
     if ($('#tweet-text').val().length > 140) {
       event.preventDefault();
       const message = 'Your tweet cannot exceed 140 characters!';
-      $('.error').append(message).slideDown(300);
+      $('.error p').text(message);
+      $('.error').slideDown(300);
       return;
     }
     onSubmit(event);
