@@ -2,10 +2,15 @@
   color: #d11919;
   font-size: 20px;
   font-weight: 600;
-  padding: 1.5em 1em;
+  padding: 1em;
   border: 3px solid #d11919;
   margin-bottom: 20px;
   display: none;
+}
+
+.error p {
+  display: inline-block;
+  padding-left: 5px;
 }
 
 .container form {
@@ -29,7 +34,7 @@ label {
   font-weight: 600;
 }
 
-div {
+form div {
   display: flex;
   justify-content: space-between;
 }
