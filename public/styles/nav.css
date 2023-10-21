@@ -29,6 +29,10 @@ nav button {
   border: 0;
 }
 
+nav button:hover {
+  font-size: 26px;
+}
+
 nav .right h2 {
   font-weight: normal;
   font-size: 1em;
