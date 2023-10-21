@@ -20,17 +20,17 @@ $(document).ready(function () {
     // No content entered
     if (!$('#tweet-text').val()) {
       event.preventDefault();
-      const message = 'Please enter at least one character!';
+      const message = "This tweet is a blank canvas waiting for your masterpiece! Don't leave it in its 'blank' state \u2014 add some strokes of wisdom!";
       $('.error p').text(message);
-      $('.error').slideDown(300);
+      $('.error').slideDown(400);
       return;
     }
     // Over 140 characters
     if ($('#tweet-text').val().length > 140) {
       event.preventDefault();
-      const message = 'Your tweet cannot exceed 140 characters!';
+      const message = "If you don't play by the rules, you don't get to tweet. One rule: Your tweet cannot exceed 140 characters!";
       $('.error p').text(message);
-      $('.error').slideDown(300);
+      $('.error').slideDown(400);
       return;
     }
     onSubmit(event);
