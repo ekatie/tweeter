@@ -4,6 +4,7 @@
   font-weight: 600;
   padding: 1em;
   border: 3px solid #d11919;
+  border-radius: 10px;
   margin-bottom: 20px;
   display: none;
 }
