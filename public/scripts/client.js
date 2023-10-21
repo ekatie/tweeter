@@ -1,11 +1,17 @@
 // When document is ready
 $(document).ready(function () {
-  // Toggle new tweet form
-  $('nav button, a').on('click', function () {
-    $('#new-tweet').toggle(400);
+  // Toggle new tweet form from top of page
+  $('nav button').on('click', function () {
+    $('#new-tweet').slideToggle(400);
+    $('.error').slideUp();
   });
 
-  // Toggle back to top icon + new tweet button
+  // Show new tweet form with jump to top
+  $('a').on('click', function () {
+    $('#new-tweet').slideDown(400);
+  });
+
+  // Toggle jump to top icon + new tweet button
   $(window).on('scroll', function () {
     if ($(window).scrollTop() !== 0) {
       $('nav button').hide();
