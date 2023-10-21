@@ -1,8 +1,19 @@
 // When document is ready
 $(document).ready(function () {
   // Toggle new tweet form
-  $('nav button').on('click', function () {
+  $('nav button, a').on('click', function () {
     $('#new-tweet').toggle(400);
+  });
+
+  // Toggle back to top icon + new tweet button
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() !== 0) {
+      $('nav button').hide();
+      $('a').show();
+    } else {
+      $('nav button').show();
+      $('a').hide();
+    }
   });
 
   $('#new-tweet').on('submit', function (event) {
