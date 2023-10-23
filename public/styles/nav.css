@@ -2,11 +2,12 @@ nav {
   display: flex;
   height: 120px;
   width: 100%;
-  background: transparent;
   color: #FFFFFF;
+  background: transparent;
   padding: 0em 1.5em;
   justify-content: space-between;
   position: fixed;
+  top: 0;
 }
 
 nav .logo {
@@ -35,10 +36,32 @@ nav button:hover {
 
 nav .right h2 {
   font-weight: normal;
-  font-size: 1em;
+  font-size: .8em;
   margin: 0;
 }
 
 nav .right i {
   color: #d11919;
+}
+
+/* Smartphones: maximum width of around 420px */
+
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    background: transparent;
+  }
+}
+
+/* Laptops / Desktops: minimum width of 1024px */
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+  }
 }
