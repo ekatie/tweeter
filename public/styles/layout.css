@@ -22,6 +22,8 @@ body {
   background-color: #e5e5e5;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -33,7 +35,8 @@ main {
   margin: 0 auto;
 }
 
-button:hover {
+button:hover,
+a:hover {
   cursor: pointer;
 }
 
@@ -49,7 +52,27 @@ a {
 }
 
 a:hover {
-  cursor: pointer;
   font-size: 26px;
   box-shadow: 2px 2px 20px #5a5a5a;
 }
+
+/* Smartphones: maximum width of around 420px */
+
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+body {
+  background-color: #f2f2f2;
+  justify-content: space-around;
+}
+
+
+
+/* Laptops / Desktops: minimum width of 1024px */
+
+@media only screen and (min-width: 1024px) {}
