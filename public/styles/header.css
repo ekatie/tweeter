@@ -1,10 +1,14 @@
+.header-container {
+  background-color: #6c78ad;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  /* position: relative; */
+}
+
 header.userInfo {
   display: flex;
   width: 100%;
   height: 520px;
   padding-top: 120px;
-  background-color: #6c78ad;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -14,4 +18,27 @@ header.userInfo {
 h2 {
   align-self: center;
   margin: 0;
+}
+
+/* Smartphones: maximum width of around 420px */
+
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+
+/* Laptops / Desktops: minimum width of 1024px */
+
+@media only screen and (min-width: 1024px) {
+  header.userInfo {
+    background-color: #f2f2f2;
+    margin-top: 200px;
+    margin-right: 50px;
+    width: 35%;
+    padding: 50px;
+  }
 }
