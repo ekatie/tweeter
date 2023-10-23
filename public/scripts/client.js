@@ -28,7 +28,11 @@ $(document).ready(function () {
       event.preventDefault();
       const message = "This tweet is a blank canvas waiting for your masterpiece! Don't leave it in its 'blank' state \u2014 add some strokes of wisdom!";
       $('.error p').text(message);
-      $('.error').slideDown(400);
+      $('.error').slideDown({
+        start: function () {
+          $('.error').css('display', 'flex');
+        }
+      });
       return;
     }
     // Over 140 characters
@@ -36,7 +40,11 @@ $(document).ready(function () {
       event.preventDefault();
       const message = "If you don't play by the rules, you don't get to tweet. One rule: Your tweet cannot exceed 140 characters!";
       $('.error p').text(message);
-      $('.error').slideDown(400);
+      $('.error').slideDown({
+        start: function () {
+          $('.error').css('display', 'flex');
+        }
+      });
       return;
     }
     onSubmit(event);
