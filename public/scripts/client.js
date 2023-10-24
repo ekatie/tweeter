@@ -50,6 +50,7 @@ $(document).ready(function () {
     onSubmit(event);
     $('#new-tweet')[0].reset();
     $('.error').slideUp();
+    $('.counter').text('140');
   });
 
   loadTweets();
