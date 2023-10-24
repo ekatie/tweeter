@@ -56,23 +56,13 @@ a:hover {
   box-shadow: 2px 2px 20px #5a5a5a;
 }
 
-/* Smartphones: maximum width of around 420px */
-
-@media only screen and (max-width: 420px) {
-  /* Write smartphone only styles here */
-}
 
 /* Tablet: minimum width of 768px to maximum width of 1024px */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
-
-body {
-  background-color: #f2f2f2;
-  justify-content: space-around;
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #f2f2f2;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
-
-
-
-/* Laptops / Desktops: minimum width of 1024px */
-
-@media only screen and (min-width: 1024px) {}
