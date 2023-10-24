@@ -55,7 +55,3 @@ nav .right i {
     font-size: 1em;
   }
 }
-
-/* Laptops / Desktops: minimum width of 1024px */
-
-@media only screen and (min-width: 1024px) {}
