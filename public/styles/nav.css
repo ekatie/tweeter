@@ -44,24 +44,18 @@ nav .right i {
   color: #d11919;
 }
 
-/* Smartphones: maximum width of around 420px */
-
-@media only screen and (max-width: 420px) {
-  /* Write smartphone only styles here */
-}
-
 /* Tablet: minimum width of 768px to maximum width of 1024px */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   nav {
-    background: transparent;
+    background-color: #4056A1;
+  }
+
+  nav .right h2 {
+    font-size: 1em;
   }
 }
 
 /* Laptops / Desktops: minimum width of 1024px */
 
-@media only screen and (min-width: 1024px) {
-  nav {
-    background-color: #4056A1;
-  }
-}
+@media only screen and (min-width: 1024px) {}
