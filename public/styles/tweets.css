@@ -32,7 +32,6 @@ header div {
   color: #adacac;
   font-weight: 600;
   font-size: 22px;
-  padding-right: 20px;
 }
 
 article p {
@@ -61,28 +60,18 @@ footer i:hover {
   cursor: pointer;
 }
 
-
-/* Smartphones: maximum width of around 420px */
-
-@media only screen and (max-width: 420px) {
-  /* Write smartphone only styles here */
-}
-
 /* Tablet: minimum width of 768px to maximum width of 1024px */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .container {
-    margin-top: 200px;
+    margin: 200px 15px 0 70px;
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
   }
-}
 
-
-/* Laptops / Desktops: minimum width of 1024px */
-
-@media only screen and (min-width: 1024px) {
+  .handle {
+    padding-right: 20px;
+  }
 
   article {
     background-color: #ffffff
