@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('#new-tweet').slideDown(400);
   });
 
-  // Toggle jump to top icon + new tweet button
+  // Toggle jump to top icon and new tweet button
   $(window).on('scroll', function () {
     if ($(window).scrollTop() !== 0) {
       $('nav button').hide();
@@ -22,11 +22,12 @@ $(document).ready(function () {
     }
   });
 
+  // New tweet form submitted
   $('#new-tweet').on('submit', function (event) {
     // No content entered
     if (!$('#tweet-text').val()) {
       event.preventDefault();
-      const message = "This tweet is a blank canvas waiting for your masterpiece! Don't leave it in its 'blank' state \u2014 add some strokes of wisdom!";
+      const message = "If you don't play by the rules, you don't get to tweet. Rule One: Your tweet cannot be empty!";
       $('.error p').text(message);
       $('.error').slideDown({
         start: function () {
@@ -38,7 +39,7 @@ $(document).ready(function () {
     // Over 140 characters
     if ($('#tweet-text').val().length > 140) {
       event.preventDefault();
-      const message = "If you don't play by the rules, you don't get to tweet. One rule: Your tweet cannot exceed 140 characters!";
+      const message = "If you don't play by the rules, you don't get to tweet. Rule Two: Your tweet cannot exceed 140 characters!";
       $('.error p').text(message);
       $('.error').slideDown({
         start: function () {
@@ -47,6 +48,7 @@ $(document).ready(function () {
       });
       return;
     }
+    // Clear text input field, remove error, reset character counter
     onSubmit(event);
     $('#new-tweet')[0].reset();
     $('.error').slideUp();
@@ -75,7 +77,6 @@ const onSubmit = function (event) {
  * @param {String} str - String text input by user.
  * @returns - Secure / sanitized version of the string.
  */
-
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
