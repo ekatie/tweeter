@@ -9,6 +9,7 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
 - [Dependencies](#dependencies)
 - [External Resources](#external-resources)
 - [JavaScript Libraries](#javascript-libraries)
+- [Screenshots and Demos](#screenshots-and-demos)
 
 ## Installation
 
