@@ -23,12 +23,13 @@ nav {
     @include vertical-align;
   }
 
-  button {
+  .toggle-form {
     background: transparent;
+    color: $accent-colour-white;
     border: 0;
   }
 
-  button:hover {
+  .toggle-form:hover:hover {
     font-size: 26px;
   }
 
@@ -43,9 +44,9 @@ nav {
   }
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
+/* Desktop View - mix width 1024px */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   nav {
     background-color: $link-colour;
 
