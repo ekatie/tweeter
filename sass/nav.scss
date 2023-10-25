@@ -1,0 +1,56 @@
+@import '_variables', '_mixins';
+
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  color: $accent-colour-white;
+  background: transparent;
+  padding: 0em 1.5em;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+
+  .logo {
+    font-family: $accent-font;
+    align-self: end;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .right {
+    margin-top: 30px;
+    @include vertical-align;
+  }
+
+  button {
+    background: transparent;
+    border: 0;
+  }
+
+  button:hover {
+    font-size: 26px;
+  }
+
+  .right h2 {
+    font-weight: normal;
+    font-size: .8em;
+    margin: 0;
+  }
+
+  .right i {
+    color: $accent-colour-red;
+  }
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: $link-colour;
+
+    .right h2 {
+      font-size: 1em;
+    }
+  }
+}
