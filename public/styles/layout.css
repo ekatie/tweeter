@@ -16,12 +16,11 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   color: #545149;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +28,6 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 main {
   width: 90%;
   margin: 0 auto;
@@ -41,7 +39,7 @@ a:hover {
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #d11919;
   position: fixed;
   bottom: 10px;
@@ -57,10 +55,8 @@ a:hover {
 }
 
 /* Tablet: minimum width of 768px to maximum width of 1024px */
-
 @media only screen and (min-width: 768px) {
   body {
-    background-color: #f2f2f2;
     justify-content: space-around;
     flex-direction: row;
   }
