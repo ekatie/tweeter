@@ -20,7 +20,7 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
 4. **Sass Compilation (Optional)**: Use `npm run sass-watch` if you make changes to Sass files and need to recompile CSS.
 5. **Access the Application**: Go to [http://localhost:8080/](http://localhost:8080/) in your browser. (You can change the port configuration in your server code if needed.)
 
-### Key Components
+## Key Components
 
 - **HTML Structure**: The project's HTML structure includes a fixed top navigation bar, a main content section for displaying tweets, and a tweet composition form.
 
@@ -32,6 +32,7 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
    5. **XSS Protection**: Tweet content is sanitized to protect against cross-site scripting (XSS) attacks.
 
 - **CSS Styles**: Various CSS styles are applied to enhance the visual appeal and layout of the application.
+ - *Responsive Design*: The project incorporates responsive design to ensure a seamless user experience on both desktop and smaller screens.
 
 ## Dependencies
 
@@ -58,3 +59,11 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
 
 - **jQuery**: [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js): Dynamic functionality.
 - **Timeago.js**: [Timeago.js](https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js): Real-time timestamps.
+
+## Screenshots and Demos
+
+Desktop View Snapshot: ![Screenshot](./media/screenshot-desktop.png)
+Mobile View Snapshot![Screenshot](./media/screenshot-mobile.png)
+
+Responsive Design Demo ![GIF](./media/responsive-design.gif)
+Functionality Demo ![GIF](./media/desktop-tweeter.gif)
