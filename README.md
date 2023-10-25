@@ -69,7 +69,7 @@ Mobile View Snapshot
 <img src="https://github.com/ekatie/tweeter/blob/main/media/screenshot-mobile.png" width="400">  
 
 Responsive Design Demo  
-![GIF](https://github.com/ekatie/tweeter/blob/main/media/responsive-design.gif)  
+![GIF of responsive design from desktop to mobile view](https://github.com/ekatie/tweeter/blob/main/media/responsive-design.gif)  
 
 Functionality Demo  
-![GIF](https://github.com/ekatie/tweeter/blob/main/media/desktop-tweeter.gif)  
+![GIF of main functionality and various interactive components](https://github.com/ekatie/tweeter/blob/main/media/desktop-tweeter.gif)  
