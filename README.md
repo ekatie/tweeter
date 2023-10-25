@@ -62,8 +62,14 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
 
 ## Screenshots and Demos
 
-Desktop View Snapshot: ![Screenshot](./media/screenshot-desktop.png)
-Mobile View Snapshot![Screenshot](./media/screenshot-mobile.png)
+Desktop View Snapshot
+![Screenshot](./media/screenshot-desktop.png)
 
-Responsive Design Demo ![GIF](./media/responsive-design.gif)
-Functionality Demo ![GIF](./media/desktop-tweeter.gif)
+Mobile View Snapshot
+![Screenshot](./media/screenshot-mobile.png)
+
+Responsive Design Demo 
+![GIF](./media/responsive-design.gif)
+
+Functionality Demo 
+![GIF](./media/desktop-tweeter.gif)
