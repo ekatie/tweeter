@@ -9,14 +9,12 @@ nav {
   position: fixed;
   top: 0;
 }
-
 nav .logo {
   font-family: "Bungee", sans-serif;
   align-self: end;
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
-
 nav .right {
   margin-top: 30px;
   display: flex;
@@ -24,32 +22,28 @@ nav .right {
   justify-content: center;
   align-items: center;
 }
-
-nav button {
+nav .toggle-form {
   background: transparent;
+  color: #ffffff;
   border: 0;
 }
-
-nav button:hover {
+nav .toggle-form:hover:hover {
   font-size: 26px;
 }
-
 nav .right h2 {
   font-weight: normal;
   font-size: 0.8em;
   margin: 0;
 }
-
 nav .right i {
   color: #d11919;
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
-@media only screen and (min-width: 768px) {
+/* Desktop View - mix width 1024px */
+@media only screen and (min-width: 1024px) {
   nav {
     background-color: #4056A1;
   }
-
   nav .right h2 {
     font-size: 1em;
   }
