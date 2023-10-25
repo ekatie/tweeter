@@ -2,7 +2,7 @@ nav {
   display: flex;
   height: 120px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   background: transparent;
   padding: 0em 1.5em;
   justify-content: space-between;
@@ -11,18 +11,18 @@ nav {
 }
 
 nav .logo {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   align-self: end;
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
 
 nav .right {
-  display: flex;
   margin-top: 30px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 nav button {
@@ -36,7 +36,7 @@ nav button:hover {
 
 nav .right h2 {
   font-weight: normal;
-  font-size: .8em;
+  font-size: 0.8em;
   margin: 0;
 }
 
@@ -45,7 +45,6 @@ nav .right i {
 }
 
 /* Tablet: minimum width of 768px to maximum width of 1024px */
-
 @media only screen and (min-width: 768px) {
   nav {
     background-color: #4056A1;
