@@ -63,13 +63,13 @@ Tweeter is a delightful single-page Twitter clone, crafted to showcase my profic
 ## Screenshots and Demos
 
 Desktop View Snapshot
-![Screenshot](./media/screenshot-desktop.png)
+<img src="./media/screenshot-desktop.png" width="400">
 
 Mobile View Snapshot
-![Screenshot](./media/screenshot-mobile.png)
+<img src="./media/screenshot-mobile.png" width="400">
 
-Responsive Design Demo 
-![GIF](./media/responsive-design.gif)
+Responsive Design Demo
+<img src="./media/responsive-design.gif" width="400">
 
-Functionality Demo 
-![GIF](./media/desktop-tweeter.gif)
+Functionality Demo
+<img src="./media/desktop-tweeter.gif" width="400">
