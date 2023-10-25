@@ -1,0 +1,69 @@
+@import '_variables';
+
+.error {
+  color: $accent-colour-red;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1em;
+  border: 3px solid $accent-colour-red;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    display: inline-block;
+    padding-left: 5px;
+  }
+}
+
+.container {
+  form {
+    display: none;
+
+    .interact {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+  }
+
+  button {
+    background-color: $link-colour;
+    color: $accent-colour-white;
+    font-family: 'Bungee', sans-serif;
+    font-size: 20px;
+    padding: 2px 10px;
+    border: 0;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: $accent-colour-red;
+  }
+
+}
+
+label {
+  font-weight: 600;
+  color: $text-colour;
+}
+
+#tweet-text {
+  width: 100%;
+  padding: 10px 5px;
+  display: flex;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid $text-colour;
+  resize: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.counter {
+  align-self: flex-end;
+  font-family: 'Bungee', sans-serif;
+  font-size: 24px;
+}

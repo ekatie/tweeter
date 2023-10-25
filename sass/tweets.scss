@@ -1,0 +1,77 @@
+@import '_variables';
+
+.container {
+  margin-top: 40px;
+}
+
+article {
+  border: 3px solid $text-colour;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: $accent-colour-white;
+
+  p {
+    border-bottom: 3px solid $text-colour;
+    margin: 10px 0;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 10px;
+    font-size: 16px;
+
+    i {
+      color: $link-colour;
+      margin: 0 3px;
+    }
+
+    i:hover {
+      color: $accent-colour-red;
+      cursor: pointer;
+    }
+  }
+}
+
+article:hover {
+  box-shadow: 5px 5px #b5b5b5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    align-items: center
+  }
+}
+
+.mini-avatar {
+  width: 60px;
+  margin-right: 15px;
+}
+
+.handle {
+  color: #adacac;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 200px 15px 0 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .handle {
+    padding-right: 20px;
+  }
+}
