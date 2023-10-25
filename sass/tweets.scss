@@ -42,11 +42,12 @@ article:hover {
   box-shadow: 5px 5px #b5b5b5;
 }
 
-header {
+#tweets-container header {
   display: flex;
   justify-content: space-between;
 
   div {
+    display: flex;
     align-items: center
   }
 }
@@ -62,9 +63,9 @@ header {
   font-size: 22px;
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
+/* Desktop View - mix width 1024px */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .container {
     margin: 200px 15px 0 70px;
     display: flex;
