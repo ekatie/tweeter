@@ -1,19 +1,19 @@
 nav {
-  display: flex;
   height: 120px;
   width: 100%;
   color: #ffffff;
   background: transparent;
   padding: 0em 1.5em;
+  display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
 }
 nav .logo {
   font-family: "Bungee", sans-serif;
-  align-self: end;
   font-size: 1.5em;
   padding-bottom: 0.5em;
+  align-self: end;
 }
 nav .right {
   margin-top: 30px;
@@ -27,7 +27,7 @@ nav .toggle-form {
   color: #ffffff;
   border: 0;
 }
-nav .toggle-form:hover:hover {
+nav .toggle-form:hover {
   font-size: 26px;
 }
 nav .right h2 {
