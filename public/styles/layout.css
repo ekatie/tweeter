@@ -57,7 +57,7 @@ a:hover {
 /* Desktop View - mix width 1024px */
 @media only screen and (min-width: 1024px) {
   body {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
   }
   main.container {
