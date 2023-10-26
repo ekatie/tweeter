@@ -24,35 +24,7 @@ $(document).ready(function () {
 
   // New tweet form submitted
   $('#new-tweet').on('submit', function (event) {
-    // No content entered
-    if (!$('#tweet-text').val()) {
-      event.preventDefault();
-      const message = "If you don't play by the rules, you don't get to tweet. Rule One: Your tweet cannot be empty!";
-      $('.error p').text(message);
-      $('.error').slideDown({
-        start: function () {
-          $('.error').css('display', 'flex');
-        }
-      });
-      return;
-    }
-    // Over 140 characters
-    if ($('#tweet-text').val().length > 140) {
-      event.preventDefault();
-      const message = "If you don't play by the rules, you don't get to tweet. Rule Two: Your tweet cannot exceed 140 characters!";
-      $('.error p').text(message);
-      $('.error').slideDown({
-        start: function () {
-          $('.error').css('display', 'flex');
-        }
-      });
-      return;
-    }
-    // Clear text input field, remove error, reset character counter
     onSubmit(event);
-    $('#new-tweet')[0].reset();
-    $('.error').slideUp();
-    $('.counter').text('140');
   });
 
   loadTweets();
@@ -66,9 +38,42 @@ const onSubmit = function (event) {
   event.preventDefault();
   const tweetData = $('#new-tweet').serialize();
 
+  // Trim the tweet content to remove leading and trailing spaces
+  const trimmedTweet = $('#tweet-text').val().trim();
+
+  // No content entered
+  if (!trimmedTweet) {
+    $('.error p').text("If you don't play by the rules, you don't get to tweet! Rule One: Your tweet cannot be empty.");
+    $('.error').slideDown({
+      start: function () {
+        $('.error').css('display', 'flex');
+      }
+    });
+    return;
+  }
+  // Over 140 characters
+  if (trimmedTweet.length > 140) {
+    $('.error p').text("If you don't play by the rules, you don't get to tweet! Rule Two: Your tweet cannot exceed 140 characters.");
+    $('.error').slideDown({
+      start: function () {
+        $('.error').css('display', 'flex');
+      }
+    });
+    return;
+  }
+
+  // Clear text input field, remove error, reset character counter
+  $('#new-tweet')[0].reset();
+  $('.error').slideUp();
+  $('.counter').text('140');
+
   $.post('/tweets', tweetData)
     .then(() => {
       loadTweets();
+    })
+    .catch((error) => {
+      $('.error p').text("Oops! An error occurred while posting your tweet.");
+      $('.error').slideDown();
     });
 };
 
@@ -130,7 +135,12 @@ const renderTweets = function (tweetsArray) {
  * This function loads the existing tweets.
  */
 const loadTweets = function () {
-  $.get('/tweets', (res) => {
-    renderTweets(res);
-  });
+  $.get('/tweets')
+    .done((res) => {
+      renderTweets(res);
+    })
+    .fail((error) => {
+      $('.error p').text('Oops! An error occurred while loading tweets.');
+      $('.error').slideDown();
+    });
 };
